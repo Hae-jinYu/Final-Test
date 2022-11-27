@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class GemMaker : MonoBehaviour
 {
-    //public static GemMaker instance;
     public GameObject gemPrefab;
     GameObject player;
     public int gemCounts = 10;
 
-    //List<GameObject> gems = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
