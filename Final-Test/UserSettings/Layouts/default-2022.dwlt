@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 976
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 402.66663
     height: 926
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Others/Elf/FBX/Elf
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Others/Elf/FBX/Elf
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\woods\\OneDrive\\\uBB38\uC11C\\GitHub\\Final-Test\\Final-Test"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac640000
-    m_LastClickedID: 25772
-    m_ExpandedIDs: 0000000066640000686400006a6400006c6400006e64000070640000726400007464000000ca9a3b
+    m_SelectedIDs: 7a640000
+    m_LastClickedID: 25722
+    m_ExpandedIDs: 0000000076640000786400007a6400007c6400007e640000806400008264000084640000a464000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066640000686400006a6400006c6400006e640000706400007264000074640000
+    m_ExpandedIDs: 0000000076640000786400007a6400007c6400007e640000806400008264000084640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,23 +488,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 46c8ffff
-      m_LastClickedID: -14266
-      m_ExpandedIDs: 52cdffff0ef7ffff34fbffff745d0000c4e70000
+      m_SelectedIDs: e6edffff
+      m_LastClickedID: -4634
+      m_ExpandedIDs: 8eefffff34fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: PP_Daffodil_03 (1)
-        m_OriginalName: PP_Daffodil_03 (1)
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -16182
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -772,9 +772,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.263609, y: 9.524242, z: -54.714584}
+    m_Target: {x: -9.043221, y: 5.6802692, z: -68.600464}
     speed: 2
-    m_Value: {x: -4.263609, y: 9.524242, z: -54.714584}
+    m_Value: {x: -9.043221, y: 5.6802692, z: -68.600464}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -820,13 +820,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.33198628, y: -0.00563648, z: 0.0020555563, w: 0.9433173}
+    m_Target: {x: 0.43443725, y: -0.005375789, z: 0.0026636038, w: 0.90073824}
     speed: 2
-    m_Value: {x: 0.33338445, y: -0.0056331125, z: 0.0020639088, w: 0.94277185}
+    m_Value: {x: 0.43441528, y: -0.0053755175, z: 0.0026634692, w: 0.9006927}
   m_Size:
-    m_Target: 9.418995
+    m_Target: 1.9205908
     speed: 2
-    m_Value: 9.418995
+    m_Value: 1.8378859
   m_Ortho:
     m_Target: 1
     speed: 2
