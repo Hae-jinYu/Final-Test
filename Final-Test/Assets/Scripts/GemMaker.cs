@@ -26,16 +26,8 @@ public class GemMaker : MonoBehaviour
 
         if (true)
         {
-            GameObject GemPrefab = (GameObject)Instantiate(gemPrefab, new Vector3(randomX, 2.6f, randomZ), Quaternion.identity);
+            GameObject GemPrefab = (GameObject)Instantiate(gemPrefab, new Vector3(randomX, 5f, randomZ), Quaternion.identity);
             GemPrefab.transform.parent = transform;
-            //gems.Add(GemPrefab);
-        }
-        for (int i = 0; i < gemCounts; i++)
-        {
-            
-            //GameObject GemPrefab = Instantiate(gemPrefab) as GameObject;
-            
-            //GemPrefab.transform.position = new Vector3(randomX, 2.6f, randomZ);
         }
     }
 
