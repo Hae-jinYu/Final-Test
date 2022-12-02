@@ -4,27 +4,56 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
+    public int maxHealth;
+    public int curHealth;
+    public BoxCollider meleeArea;
+    public bool isAttack;
+
     Rigidbody rigid;
     BoxCollider boxCollider;
     Material mat;
 
-    int damage = 10;
-
-    void Awake()
+    private void Awake()
     {
         rigid = GetComponent<Rigidbody>();
         boxCollider = GetComponent<BoxCollider>();
+        mat = GetComponentInChildren<MeshRenderer>().material;
+
     }
 
-    // Start is called before the first frame update
-    void Start()
+    IEnumerator Attack()
     {
-        
+        isAttack = true;
+        yield return null;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag =="Melee")
+        {
+            Weapon weapon = other.GetComponent<Weapon>();
+            curHealth -= weapon.damage;
+            StartCoroutine(OnDamage());
+            Debug.Log("Melee : " + curHealth);
+        }
+    }
+
+    IEnumerator OnDamage()
     {
         
+        yield return new WaitForSeconds(0.1f);
+
+        if(curHealth>0)
+        {
+            mat.color = Color.white;
+
+        }
+        else
+        {
+            mat.color = Color.gray;
+            Destroy(gameObject, 0.5f);
+        }
+
     }
 }
