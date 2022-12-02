@@ -5,148 +5,131 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed;
-    public GameObject[] item;
-    public bool[] hasItem;
-    public int health;
+    public GameObject[] hay;//배열
+    
+
+    //public int hay;
+
+    public int health=100;//플레이어 체력
+
     float hAxis;
     float vAxis;
-
-    bool fDown;
-    bool iDown;
-    bool sDown;
-
-    bool isFireReady;
-    bool isDamage;
+    bool wDown;//걷기 애니메이션
+    bool jDown;//점프 애니메이션
+    bool isJump;
+    bool iDown;//아이템 상호작용
+    
     Vector3 moveVec;
 
+    Rigidbody rigid;
     Animator anim;
-    MeshRenderer[] meshs;
+
 
     GameObject nearObject;
-    Weapon equipWeapon;
-    int equipWeaponIndex = -1;
-    float fireDelay;
-
-    // Start is called before the first frame update
-   
     void Awake()
     {
+        rigid = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
-        meshs = GetComponentsInChildren<MeshRenderer>();
-
     }
+
     // Update is called once per frame
     void Update()
     {
+
         GetInput();
-        Interation();
-        Swap();
-        Attack();
-        hAxis = Input.GetAxisRaw("Horizontal");
-        vAxis = Input.GetAxisRaw("Vertical");
+        Move();
+        Turn();
+        Jump();
 
-        moveVec = new Vector3(hAxis, 0, vAxis).normalized;
 
-        transform.position += moveVec * speed* Time.deltaTime;
-
-        anim.SetBool("isRun", moveVec != Vector3.zero);
-
-        transform.LookAt(transform.position + moveVec);
     }
 
     void GetInput()
-    {
-
-        iDown = Input.GetButtonDown("Interation");
-        sDown = Input.GetButtonDown("Swap");
-        fDown = Input.GetButtonDown("Fire1");
+	{
+        hAxis = Input.GetAxisRaw("Horizontal");
+        vAxis = Input.GetAxisRaw("Vertical");
+        //wDown = Input.GetButton("Walk");
+        jDown = Input.GetButtonDown("Jump");
+        iDown = Input.GetButtonDown("Interaction");//아이템상호작용
     }
-    void Swap()
-    {
-        if (sDown && !hasItem[0])
-        { return; }
-        int weaponIndex = -1;
-        if (sDown) weaponIndex = 0;
+    void Move()
+	{
+        moveVec = new Vector3(hAxis, 0, vAxis).normalized;
 
-        if(sDown)
-        {
-            if(equipWeapon!= null)
-                equipWeapon.gameObject.SetActive(false);
+        transform.position += moveVec * speed * Time.deltaTime;
 
-           equipWeaponIndex = weaponIndex;
-           equipWeapon = item[weaponIndex].GetComponent<Weapon>();
-           equipWeapon.gameObject.SetActive(true);
-        }
-
+        anim.SetBool("isRun", moveVec != Vector3.zero);
     }
+    void Turn()
+	{
+        transform.LookAt(transform.position + moveVec);//플레이어 회전
+	}
 
-    void Attack()  
-    {
-        if (equipWeapon == null)
-            return;
-
-        fireDelay += Time.deltaTime;
-        isFireReady = equipWeapon.rate < fireDelay;
-
-          if(fDown && isFireReady)
-        {
-            equipWeapon.Use();
-            //anim.SetTrigger("doSwing");
-            Debug.Log("attack");
-            fireDelay = 0;
-        }
-    }
-    void Interation()
-    {
-        if(iDown && nearObject!=null)
-        {
-            if (nearObject.tag == "Item")
-            {
-                Item item = nearObject.GetComponent<Item>();
-                int itemIndex = item.value;
-                hasItem[itemIndex] = true;
+    void Jump()
+	{
+		if (jDown && !isJump)
+		{
+            rigid.AddForce(Vector3.up * 10, ForceMode.Impulse);
+            isJump = true;
+		}
+	}
+    
+    void Interaction()
+	{
+        if(iDown && nearObject!=null && !isJump)
+		{
+			if (nearObject.tag == "Hay")
+			{
+                HayItem item = nearObject.GetComponent<HayItem>();
 
                 Destroy(nearObject);
             }
-        }
+		}
+	}
 
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-       if(other.tag == "EnemyBullet")
+    void OnCollisionEnter(Collision collision)
+	{
+		if (collision.gameObject.tag == "Floor")
+		{
+            isJump = false;
+        }
+	}
+
+    void OnTriggerEnter(Collider other)
+	{
+        if (other.tag == "Hay")
         {
-            if (!isDamage)
             {
-                Bullet enemyBullet = other.GetComponent<Bullet>();
-                health -= enemyBullet.damage;
-                StartCoroutine(OnDamage());
+                HayItem item = other.GetComponent<HayItem>();//아이템 스크립트 가져옴
+                //방어막 생김
+                //bool isProtected 필요함. 
             }
+            Destroy(other.gameObject);
         }
-    }
-    IEnumerator OnDamage()
-    {
-        isDamage = true;
-        foreach(MeshRenderer mesh in meshs)
+        else _ = (other.tag == "Enemy");
         {
-            mesh.material.color = Color.red;
-        }
-        yield return new WaitForSeconds(0.5f);
-        isDamage = false;
-        foreach (MeshRenderer mesh in meshs)
-        {
-            mesh.material.color = Color.white;
-        }
-    }
+            {
+                //Enemy enemy = other.GetComponent<>(Enemy);//애너미 스크립트 가져옴 //에너미스크립트가 적용 안되어서 생기는 오류?
+                //health -= enemy.damage;
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Item")
+            }
+            Debug.Log(health);
+        }
+	}
+
+    void OnTriggerStay(Collider other)//아이템에 가까이 다가감
+	{
+        if (other.tag == "Hay") 
             nearObject = other.gameObject;
+
+        Debug.Log(nearObject.name);
+	}
+    void OnTriggerExit(Collider other)//아이템에서 멀어짐
+	{
+        if (other.tag == "Hay")
+            nearObject = null ;
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Item")
-            nearObject = null;
-    }
+
+
 }
