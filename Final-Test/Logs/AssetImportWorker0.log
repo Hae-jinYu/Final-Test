@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.1/staging' branch; Version is '2022.1.23f1 (9636b062134a) revision 9844400'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'ko' Physical Memory: 16092 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'ko' Physical Memory: 16173 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2022.1.23f1\Editor\Unity.exe
+C:\Program Files\Unity 2022.1.23f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/woods/OneDrive/문서/GitHub/Final-Test/Final-Test
+C:/3dconpro/finaltest1
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52551
-Successfully changed project path to: C:/Users/woods/OneDrive/문서/GitHub/Final-Test/Final-Test
-C:/Users/woods/OneDrive/문서/GitHub/Final-Test/Final-Test
+63495
+Successfully changed project path to: C:/3dconpro/finaltest1
+C:/3dconpro/finaltest1
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,61 +47,396 @@ C:/Users/woods/OneDrive/문서/GitHub/Final-Test/Final-Test
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 121.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 102.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.23f1 (9636b062134a)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/woods/OneDrive/문서/GitHub/Final-Test/Final-Test/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.1.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/3dconpro/finaltest1/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
-    Vendor:   Intel
-    VRAM:     8046 MB
-    Driver:   30.0.100.9836
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Vendor:   NVIDIA
+    VRAM:     5991 MB
+    Driver:   27.21.14.5720
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Mono path[0] = 'C:/Program Files/Unity 2022.1.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2022.1.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.375471 seconds.
+Register platform support module: C:/Program Files/Unity 2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006155 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 341.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 99.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in 18.345 seconds
+- Completed reload, in  0.887 seconds
 Domain Reload Profiling:
-	ReloadAssembly (18348ms)
-		BeginReloadAssembly (12716ms)
+	ReloadAssembly (888ms)
+		BeginReloadAssembly (109ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (3564ms)
-			LoadAssemblies (12714ms)
+		EndReloadAssembly (640ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (2052ms)
-				TypeCache.Initialize (2050ms)
-					TypeCache.ScanAssembly (2046ms)
-				ResolveRequiredComponents (2ms)
+			SetupTypeCache (199ms)
+				TypeCache.Initialize (199ms)
+					TypeCache.ScanAssembly (197ms)
+				ResolveRequiredComponents (1ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (118ms)
-			SetupLoadedEditorAssemblies (1166ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (342ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (35ms)
-				SetLoadedEditorAssemblies (27ms)
-				RefreshPlugins (342ms)
-				BeforeProcessingInitializeOnLoad (5ms)
-				ProcessInitializeOnLoadAttributes (540ms)
-				ProcessInitializeOnLoadMethodAttributes (216ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (8ms)
+				RefreshPlugins (100ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (160ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.034399 seconds.
+Registered in 0.010018 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3dconpro\finaltest1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3dconpro\finaltest1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.476 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1477ms)
+		BeginReloadAssembly (189ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1098ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (417ms)
+				TypeCache.Initialize (410ms)
+					TypeCache.ScanAssembly (405ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (455ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3379 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (58.3 KB). Loaded Objects now: 3840.
+Memory consumption went from 0.51 GB to 0.51 GB.
+Total: 4.215800 ms (FindLiveObjects: 0.385800 ms CreateObjectMapping: 0.323700 ms MarkObjects: 3.424400 ms  DeleteObjects: 0.080800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1707202.043132 seconds.
+  path: Assets/Resources/skip-icon.png
+  artifactKey: Guid(5e849be646548a7499b91b06441bcf8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/skip-icon.png using Guid(5e849be646548a7499b91b06441bcf8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9dd0bc47cdb087e2a34310cc45d86b6') in 0.059248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.306434 seconds.
+  path: Assets/Resources/skip-icon.png
+  artifactKey: Guid(5e849be646548a7499b91b06441bcf8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/skip-icon.png using Guid(5e849be646548a7499b91b06441bcf8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64a24b767d253cebf9b9fdc6d39d709') in 0.065540 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007775 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\3dconpro\finaltest1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\3dconpro\finaltest1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.265 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1266ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (955ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (348ms)
+				TypeCache.Initialize (340ms)
+					TypeCache.ScanAssembly (334ms)
+				ResolveRequiredComponents (8ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (389ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (242ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3372 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (25.4 KB). Loaded Objects now: 3850.
+Memory consumption went from 0.51 GB to 0.51 GB.
+Total: 4.701700 ms (FindLiveObjects: 0.328000 ms CreateObjectMapping: 0.283600 ms MarkObjects: 4.051200 ms  DeleteObjects: 0.037700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3478.273777 seconds.
+  path: Assets/Game GUI Vol1/LazyDay
+  artifactKey: Guid(25fefd08f02e9412ea797d6eaae90d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/LazyDay using Guid(25fefd08f02e9412ea797d6eaae90d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb2f8842aa1cabc9565911a3a42239a') in 0.039145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.610017 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks
+  artifactKey: Guid(38aacccc0e11d4fa2b43990edd2a583f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks using Guid(38aacccc0e11d4fa2b43990edd2a583f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f5ea540ac0e49a65b0f15b80d62929') in 0.010252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.976042 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/Sprites
+  artifactKey: Guid(a1f687b05772f48138b07d6436b4442d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/Sprites using Guid(a1f687b05772f48138b07d6436b4442d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da0b08630e329613e796d6bc9f4625d7') in 0.006191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.062881 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/Sprites/WoodenBG-resized.png
+  artifactKey: Guid(278249b5f3eca4d38be55ca9a2a87e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/Sprites/WoodenBG-resized.png using Guid(278249b5f3eca4d38be55ca9a2a87e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ab452f7502a08e0090ce22e11b71ef') in 0.165547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.315651 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Backward.png
+  artifactKey: Guid(c916bf149f09c459089a45701474d78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Backward.png using Guid(c916bf149f09c459089a45701474d78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60b6594798b266b4cb82ecfbe38fb92e') in 0.028203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Forward.png
+  artifactKey: Guid(b4d4b6ba6b700437281965634850cd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Forward.png using Guid(b4d4b6ba6b700437281965634850cd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8512fa26836bc5f9cffb54dea94a6ef1') in 0.025430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/GooglePlus.png
+  artifactKey: Guid(b6ac349d9494c4899bb71d2f222547eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/GooglePlus.png using Guid(b6ac349d9494c4899bb71d2f222547eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0074926506657eb1c93578b46d6c6320') in 0.024313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Email.png
+  artifactKey: Guid(96f7c7fbe059d4ea8b8f3e34827a1e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Email.png using Guid(96f7c7fbe059d4ea8b8f3e34827a1e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3b5173a6ad0e374bf7e541e70f307e') in 0.022929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/DownArrow.png
+  artifactKey: Guid(d5b8393f09eb6470e905ec740629c4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/DownArrow.png using Guid(d5b8393f09eb6470e905ec740629c4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c1ff5b36a2f9867a13c40b76d61c689') in 0.021994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Dollar.png
+  artifactKey: Guid(cc52ac453e019400984c19bb920c9217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Dollar.png using Guid(cc52ac453e019400984c19bb920c9217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c67a71c35f88567eb51be1c9f868413') in 0.021849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/GameCenter.png
+  artifactKey: Guid(e8750dbfc75fb48f78495a60b50d42cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/GameCenter.png using Guid(e8750dbfc75fb48f78495a60b50d42cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9506286729cbe96b4057c90ed44fc1') in 0.021360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Facebook.png
+  artifactKey: Guid(777d63edabbf0469d8c7f88249361a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Facebook.png using Guid(777d63edabbf0469d8c7f88249361a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012227eccc8f82854547364e3d4c372a') in 0.022204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.310276 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Home.png
+  artifactKey: Guid(ca0a2ab339ca748a1981966c17c1829e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Home.png using Guid(ca0a2ab339ca748a1981966c17c1829e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b54d5cbe55fbdf3300d1e68dbd9d5c') in 0.022754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.742394 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Info.png
+  artifactKey: Guid(e2f97d3975aca4a5f975ded803cdc06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Info.png using Guid(e2f97d3975aca4a5f975ded803cdc06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a084764f57579b39e56813603682ddc') in 0.018745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.518352 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/LeftArrow.png
+  artifactKey: Guid(f2c06d80ab9bd4de2ae0a7876f25299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/LeftArrow.png using Guid(f2c06d80ab9bd4de2ae0a7876f25299d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26353619065e058d6e423465362a7d2') in 0.020290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.830147 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/LeftArrow2.png
+  artifactKey: Guid(0808619d4e2144e2aa965a8768addde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/LeftArrow2.png using Guid(0808619d4e2144e2aa965a8768addde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c07e4f2b0082d3cd0ff9101beaeda6') in 0.017247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.334538 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Menu.png
+  artifactKey: Guid(21a4f3d60a402429ebe35a661aa8a158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Menu.png using Guid(21a4f3d60a402429ebe35a661aa8a158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe486140e7e3c4e2904aa328d4ab637d') in 0.018933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.312270 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Minus.png
+  artifactKey: Guid(f13dc8a456a284e7b8a7489bb427798d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Minus.png using Guid(f13dc8a456a284e7b8a7489bb427798d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba0c0d286355ab87b96b9a6e98ef917') in 0.019740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.394188 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Pause.png
+  artifactKey: Guid(f06723030ef874765a5e4ed1908b0a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Pause.png using Guid(f06723030ef874765a5e4ed1908b0a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '758dd9fa985fb6c7f062503bc10a3163') in 0.019222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.545605 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Play.png
+  artifactKey: Guid(6bb92db56863a49bf9fc5e992e334d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Play.png using Guid(6bb92db56863a49bf9fc5e992e334d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5312656041c6c9d6955dd628469a86') in 0.017258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.086290 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Plus.png
+  artifactKey: Guid(0499308dc31514bf1be3189c00dd0814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Plus.png using Guid(0499308dc31514bf1be3189c00dd0814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f85863a001fade49ee0a06cd4e9fe11') in 0.018326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.762698 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/QuestionMark.png
+  artifactKey: Guid(64f0a7f4e869e4a4bb5359134071e196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/QuestionMark.png using Guid(64f0a7f4e869e4a4bb5359134071e196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d5a8b0437e31f0d7994901b3598730f') in 0.020876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.097506 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Restart.png
+  artifactKey: Guid(59e899b457bb24211ba8899f1a5d1d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Restart.png using Guid(59e899b457bb24211ba8899f1a5d1d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab26bcaeb7a8af9c253d10f3fe9504d6') in 0.021100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.045114 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/RightArrow.png
+  artifactKey: Guid(29511ee6c48ef4fe7ad496aba8b4036e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/RightArrow.png using Guid(29511ee6c48ef4fe7ad496aba8b4036e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42736b4543dd914828114feb624d0501') in 0.020181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.412601 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/RightArrow2.png
+  artifactKey: Guid(306b16567939347c78cf9ab470a783ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/RightArrow2.png using Guid(306b16567939347c78cf9ab470a783ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a5047f1c772b14447fbac9d2df7c734') in 0.019876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.309442 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Settings.png
+  artifactKey: Guid(2404a35a318704f1583a4173e501e002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Settings.png using Guid(2404a35a318704f1583a4173e501e002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094515ab5bb6480a581741be9429aefd') in 0.018319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.650478 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Shop.png
+  artifactKey: Guid(2bd72e24f280d472db2eeda221ac6b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Shop.png using Guid(2bd72e24f280d472db2eeda221ac6b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f170e53f182cbbd83cc4103161ede8e4') in 0.019474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.030382 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/SoundOFF.png
+  artifactKey: Guid(c66941a5047f24dadb66035a5ed07773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/SoundOFF.png using Guid(c66941a5047f24dadb66035a5ed07773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fdbbf2f649a8fb8ae2098a13e55847a') in 0.016908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.197551 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/SoundON.png
+  artifactKey: Guid(1f146482e13454138889e7b21267f3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/SoundON.png using Guid(1f146482e13454138889e7b21267f3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45287398b51c14d428a03ff571beb803') in 0.017997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.468338 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Star.png
+  artifactKey: Guid(e1e3e64dac28149d1bf7e15801897c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Star.png using Guid(e1e3e64dac28149d1bf7e15801897c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807af716126909bc8c7d35fb511ed225') in 0.018776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.426659 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Trophy.png
+  artifactKey: Guid(368f6f2553af84f4fb74cea5340541ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Trophy.png using Guid(368f6f2553af84f4fb74cea5340541ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7273780420f720b184930731171fb91c') in 0.020892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.391985 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Twitter.png
+  artifactKey: Guid(7010a400a94bc4ca098a158cd29f6669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Twitter.png using Guid(7010a400a94bc4ca098a158cd29f6669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf35ad6238aaadef3d6dd5dea30c64c5') in 0.020895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.326784 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/UpArrow.png
+  artifactKey: Guid(067be74ecf0444595a2a4825969316ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/UpArrow.png using Guid(067be74ecf0444595a2a4825969316ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c3cc2619f7d92ed3327eecfae28145') in 0.020729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.314260 seconds.
+  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Yes.png
+  artifactKey: Guid(9a448cbb837364621a5bbd09082913a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Yes.png using Guid(9a448cbb837364621a5bbd09082913a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c786a7d73d47fce7f414b761f627b9c8') in 0.021188 seconds 
