@@ -10,9 +10,14 @@ public class ElfController : MonoBehaviour
     private Transform transform;
     public float rotateSpeed = 100f;
     Rigidbody rigid;
+    public Camera followCamera;
 
     bool isJump;
     public float jumppower;
+    public int heart;
+    public int maxHeart;
+    public int gemCurr = 0;
+    public int gemCounts = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +65,18 @@ public class ElfController : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             isJump = false;
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Item")
+        {
+            Debug.Log("Gem È¹µæ");
+            gemCurr++;
+            if (gemCurr > gemCounts)
+                gemCurr = gemCounts;
+            Destroy(other.gameObject);
         }
     }
 }

@@ -5,14 +5,12 @@ using UnityEngine.AI;
 
 public class WitchController : MonoBehaviour
 {
-    public int maxHeart;
-    public int heart;
     public Transform target;
-    private NavMeshAgent nvAgent;
+    private NavMeshAgent nvAgent;    
 
     Animator anim;
     public bool isChase;
-
+    public int health;
     // Start is called before the first frame update
     void Awake()
     {
@@ -38,7 +36,7 @@ public class WitchController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        if (heart <= 0)
+        if (health <= 0)
         {
             isChase = false;
             anim.SetTrigger("doDie");
