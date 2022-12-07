@@ -6,7 +6,7 @@ public class StaffDrop : MonoBehaviour
 {
     public GameObject staffPrefab;
     GameObject witch;
-    float span = 1.0f; //화살 생성 주기
+    float span = 3.0f; //화살 생성 주기
     float delta = 0; //현재 경과 시간
     public Transform target;
 
@@ -24,7 +24,7 @@ public class StaffDrop : MonoBehaviour
         {
             delta = 0;
             GameObject StaffPrefab = Instantiate(staffPrefab);
-            StaffPrefab.transform.position = target.position + new Vector3(0f,1f,0f);
+            StaffPrefab.transform.position = target.position + new Vector3(0f,2f,0f);
             StaffPrefab.transform.parent = transform;
         }
     }
